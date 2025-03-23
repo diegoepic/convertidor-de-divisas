@@ -8,6 +8,7 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <div class="container">
@@ -44,8 +45,18 @@
           </div>
         </div>
       </div>
+      <div class="card mt-5">
+        <div class="card-header">
+          <h2>Histórico de Valores</h2>
+        </div>
+        <div class="card-body">
+          <canvas id="currencyChart"></canvas>
+        </div>
+      </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script defer src="assets/js/scripts.js"></script>
+    <script defer src="assets/js/grafico.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
