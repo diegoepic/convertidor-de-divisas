@@ -43,8 +43,9 @@ if (monto == "") {
 
   montoConvertido = getDivisas(monedaSelect).then((valorMoneda) => {
     const resultado = hacerConversion(monto, valorMoneda);
+    sufijo = monedaSelect == "dolar" ? "es" : "s";
     document.getElementById(
       "valorConvertido"
-    ).innerHTML = `El monto convertido es: ${resultado.toFixed(3)} ${monedaSelect}`;
+    ).innerHTML = `El monto convertido es de: ${resultado.toFixed(3)} ${monedaSelect}(${sufijo})`;
   });
 });
